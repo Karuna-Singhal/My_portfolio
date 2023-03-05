@@ -3,17 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Document</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- font css  -->
-    <link rel="stylesheet" type="text/css" href="font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
     <!-- main css -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- color css -->
-    <link rel="stylesheet" type="text/css" href="color.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <!-- default color css -->
+    <link rel="stylesheet" type="text/css" href="color/color1.css" />
+    <!-- style switcher -for demo purpose -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      class="alternate-style"
+      title="color1"
+      href="color/color1.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      class="alternate-style"
+      title="color2"
+      href="color/color2.css"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      class="alternate-style"
+      title="color3"
+      href="color/color3.css"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      class="alternate-style"
+      title="color4"
+      href="color/color4.css"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      class="alternate-style"
+      title="color5"
+      href="color/color5.css"
+      disabled
+    />
 
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style-switcher.css" />
   </head>
   <body>
+    <!-- preloader start -->
+    <div class="preloader">
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- preloader end -->
+
     <!-- Header Start -->
     <header class="header">
       <div class="container">
@@ -32,26 +86,35 @@
       <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
       <div class="nav-menu-inner">
         <ul>
-          <li><a href="#" class="inner-shadow active">home</a></li>
-          <li><a href="#" class="outer-shadow hover-in-shadow">about</a></li>
-          <li><a href="#" class="outer-shadow hover-in-shadow">services</a></li>
           <li>
-            <a href="#" class="outer-shadow hover-in-shadow">portfolio</a>
+            <a href="#home" class="link-item inner-shadow active">home</a>
           </li>
           <li>
-            <a href="#" class="outer-shadow hover-in-shadow">testimonial</a>
+            <a href="#about" class="link-item outer-shadow hover-in-shadow"
+              >about</a
+            >
           </li>
-          <li><a href="#" class="outer-shadow hover-in-shadow">contact</a></li>
+          <li>
+            <a href="#project" class="link-item outer-shadow hover-in-shadow"
+              >project</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="link-item outer-shadow hover-in-shadow"
+              >contact</a
+            >
+          </li>
         </ul>
       </div>
       <!-- copyright -->
       <p class="copyright-text">&copy; Karuna Singhal</p>
     </nav>
+    <div class="fade-out-effect"></div>
 
     <!-- navigation-menu-end -->
 
     <!-- home section start-->
-    <section class="home-section section">
+    <section class="home-section section active" id="home">
       <!-- effect wrap start -->
       <div class="effect-wrap">
         <div class="effect effect-1"></div>
@@ -109,7 +172,9 @@
             <p>Hello</p>
             <h2>I'm Karuna Singhal</h2>
             <h1>Full Stack Developer</h1>
-            <a href="#" class="btn-1 outer-shadow hover-in-shadow"
+            <a
+              href="#about"
+              class="link-item btn-1 outer-shadow hover-in-shadow"
               >More About Me</a
             >
           </div>
@@ -128,7 +193,7 @@
 
     <!-- home section end-->
     <!-- about section start -->
-    <section class="about-section section">
+    <section class="about-section section" id="about">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -187,7 +252,11 @@
             <a href="#" class="btn-1 outer-shadow hover-in-shadow">
               Download CV</a
             >
-            <a href="#" class="btn-1 outer-shadow hover-in-shadow">Hire Me</a>
+            <a
+              href="#contact"
+              class="link-item btn-1 outer-shadow hover-in-shadow"
+              >Hire Me</a
+            >
           </div>
         </div>
         <!-- about tabs start -->
@@ -209,7 +278,7 @@
               <div class="skill-item">
                 <p>HTML</p>
                 <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(50%-14px)">
+                  <div class="progress-bar" style="width: calc(50% - 14px)">
                     <span>50%</span>
                   </div>
                 </div>
@@ -219,7 +288,7 @@
               <div class="skill-item">
                 <p>JavaScript</p>
                 <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(60%-14px)">
+                  <div class="progress-bar" style="width: calc(60% - 14px)">
                     <span>60%</span>
                   </div>
                 </div>
@@ -229,7 +298,7 @@
               <div class="skill-item">
                 <p>Bootstrap</p>
                 <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(70%-14px)">
+                  <div class="progress-bar" style="width: calc(70% - 14px)">
                     <span>70%</span>
                   </div>
                 </div>
@@ -239,7 +308,7 @@
               <div class="skill-item">
                 <p>jquery</p>
                 <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(80%-14px)">
+                  <div class="progress-bar" style="width: calc(80% - 14px)">
                     <span>80%</span>
                   </div>
                 </div>
@@ -249,7 +318,7 @@
               <div class="skill-item">
                 <p>Angular</p>
                 <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(90%-14px)">
+                  <div class="progress-bar" style="width: calc(90% - 14px)">
                     <span>90%</span>
                   </div>
                 </div>
@@ -259,7 +328,7 @@
               <div class="skill-item">
                 <p>php</p>
                 <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(100%-14px)">
+                  <div class="progress-bar" style="width: calc(100% - 14px)">
                     <span>100%</span>
                   </div>
                 </div>
@@ -385,7 +454,7 @@
     </section>
     <!-- about section end -->
     <!-- project section start -->
-    <div class="project-section section">
+    <section class="project-section section" id="project">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -404,372 +473,502 @@
           </div>
         </div>
         <!-- project filter end -->
-      <!-- project items start -->
-      <div class="row project-items">
-        <!-- project item start -->
-        <div class="project-item" data-category="fullstack">
-          <div class="project-item-inner outer-shadow">
-            <div class="project-item-img">
-              <img
-                src="img/portfolio/thumb/project-1.png"
-                alt="project"
-                data-screenshots="img/portfolio/large/project-1/1.png,
+        <!-- project items start -->
+        <div class="row project-items">
+          <!-- project item start -->
+          <div class="project-item" data-category="fullstack">
+            <div class="project-item-inner outer-shadow">
+              <div class="project-item-img">
+                <img
+                  src="img/portfolio/thumb/project-1.png"
+                  alt="project"
+                  data-screenshots="img/portfolio/large/project-1/1.png,
             img/portfolio/large/project-1/2.png,
             img/portfolio/large/project-1/3.png,
             img/portfolio/large/project-1/4.png,
             img/portfolio/large/project-1/5.png,
             img/portfolio/large/project-1/6.png"
-              />
+                />
 
-              <!-- view project btn -->
-              <span class="view-project">view project</span>
-            </div>
-            <p class="project-item-title">personal project </p>
-            <!-- project item details start -->
-            <div class="project-item-details">
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  </p>
-                </div>
-                <div class="info">
-                  <h3>Project info</h3>
-                  <ul>
-                    <li>Date -<span>2020</span></li>
-                    <li>Client -<span>xty</span></li>
-                    <li>Tools -<span>html,css,js</span></li>
-                    <li>
-                      Web -<span><a href="#">www.domain.com</a></span>
-                    </li>
-                  </ul>
+                <!-- view project btn -->
+                <span class="view-project">view project</span>
+              </div>
+              <p class="project-item-title">personal project</p>
+              <!-- project item details start -->
+              <div class="project-item-details">
+                <div class="row">
+                  <div class="description">
+                    <h3>Project Brief:</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse
+                    </p>
+                  </div>
+                  <div class="info">
+                    <h3>Project info</h3>
+                    <ul>
+                      <li>Date -<span>2020</span></li>
+                      <li>Client -<span>xty</span></li>
+                      <li>Tools -<span>html,css,js</span></li>
+                      <li>
+                        Web -<span><a href="#">www.domain.com</a></span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
+              <!-- project item details end -->
             </div>
-            <!-- project item details end -->
           </div>
-        </div>
-        <!-- project item end -->
-      <!-- project item start -->
-      <div class="project-item" data-category="backend">
-        <div class="project-item-inner outer-shadow">
-          <div class="project-item-img">
-            <img
-              src="img/portfolio/thumb/project-2.png"
-              alt="project"
-              data-screenshots="img/portfolio/large/project-1/1.png,
+          <!-- project item end -->
+          <!-- project item start -->
+          <div class="project-item" data-category="backend">
+            <div class="project-item-inner outer-shadow">
+              <div class="project-item-img">
+                <img
+                  src="img/portfolio/thumb/project-2.png"
+                  alt="project"
+                  data-screenshots="img/portfolio/large/project-1/1.png,
           img/portfolio/large/project-1/2.png,
           img/portfolio/large/project-1/3.png,
           img/portfolio/large/project-1/4.png,
           img/portfolio/large/project-1/5.png,
           img/portfolio/large/project-1/6.png"
-            />
+                />
 
-            <!-- view project btn -->
-            <span class="view-project">view project</span>
-          </div>
-          <p class="project-item-title">personal project</p>
-          <!-- project item details start -->
-          <div class="project-item-details">
-            <div class="row">
-              <div class="description">
-                <h3>Project Brief:</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                </p>
+                <!-- view project btn -->
+                <span class="view-project">view project</span>
               </div>
-              <div class="info">
-                <h3>Project info</h3>
-                <ul>
-                  <li>Date -<span>2020</span></li>
-                  <li>Client -<span>xty</span></li>
-                  <li>Tools -<span>html,css,js</span></li>
-                  <li>
-                    Web -<span><a href="#">www.domain.com</a></span>
-                  </li>
-                </ul>
+              <p class="project-item-title">personal project</p>
+              <!-- project item details start -->
+              <div class="project-item-details">
+                <div class="row">
+                  <div class="description">
+                    <h3>Project Brief:</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse
+                    </p>
+                  </div>
+                  <div class="info">
+                    <h3>Project info</h3>
+                    <ul>
+                      <li>Date -<span>2020</span></li>
+                      <li>Client -<span>xty</span></li>
+                      <li>Tools -<span>html,css,js</span></li>
+                      <li>
+                        Web -<span><a href="#">www.domain.com</a></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
+              <!-- project item details end -->
             </div>
           </div>
-          <!-- project item details end -->
-        </div>
-      </div>
-      <!-- project item end -->  
-    <!-- project item start -->
-    <div class="project-item" data-category="frontend">
-      <div class="project-item-inner outer-shadow">
-        <div class="project-item-img">
-          <img
-            src="img/portfolio/thumb/project-3.png"
-            alt="project"
-            data-screenshots="img/portfolio/large/project-1/1.png,
+          <!-- project item end -->
+          <!-- project item start -->
+          <div class="project-item" data-category="frontend">
+            <div class="project-item-inner outer-shadow">
+              <div class="project-item-img">
+                <img
+                  src="img/portfolio/thumb/project-3.png"
+                  alt="project"
+                  data-screenshots="img/portfolio/large/project-1/1.png,
         img/portfolio/large/project-1/2.png,
         img/portfolio/large/project-1/3.png,
         img/portfolio/large/project-1/4.png,
         img/portfolio/large/project-1/5.png,
         img/portfolio/large/project-1/6.png"
-          />
+                />
 
-          <!-- view project btn -->
-          <span class="view-project">view project</span>
-        </div>
-        <p class="project-item-title">personal project</p>
-        <!-- project item details start -->
-        <div class="project-item-details">
-          <div class="row">
-            <div class="description">
-              <h3>Project Brief:</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              </p>
-            </div>
-            <div class="info">
-              <h3>Project info</h3>
-              <ul>
-                <li>Date -<span>2020</span></li>
-                <li>Client -<span>xty</span></li>
-                <li>Tools -<span>html,css,js</span></li>
-                <li>
-                  Web -<span><a href="#">www.domain.com</a></span>
-                </li>
-              </ul>
+                <!-- view project btn -->
+                <span class="view-project">view project</span>
+              </div>
+              <p class="project-item-title">personal project</p>
+              <!-- project item details start -->
+              <div class="project-item-details">
+                <div class="row">
+                  <div class="description">
+                    <h3>Project Brief:</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse
+                    </p>
+                  </div>
+                  <div class="info">
+                    <h3>Project info</h3>
+                    <ul>
+                      <li>Date -<span>2020</span></li>
+                      <li>Client -<span>xty</span></li>
+                      <li>Tools -<span>html,css,js</span></li>
+                      <li>
+                        Web -<span><a href="#">www.domain.com</a></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- project item details end -->
             </div>
           </div>
-        </div>
-        <!-- project item details end -->
-      </div>
-    </div>
-    <!-- project item end -->
-    <!-- project item start -->
-    <div class="project-item" data-category="frontend">
-      <div class="project-item-inner outer-shadow">
-        <div class="project-item-img">
-          <img
-            src="img/portfolio/thumb/project-4.png"
-            alt="project"
-            data-screenshots="img/portfolio/large/project-1/1.png,
+          <!-- project item end -->
+          <!-- project item start -->
+          <div class="project-item" data-category="frontend">
+            <div class="project-item-inner outer-shadow">
+              <div class="project-item-img">
+                <img
+                  src="img/portfolio/thumb/project-4.png"
+                  alt="project"
+                  data-screenshots="img/portfolio/large/project-1/1.png,
         img/portfolio/large/project-1/2.png,
         img/portfolio/large/project-1/3.png,
         img/portfolio/large/project-1/4.png,
         img/portfolio/large/project-1/5.png,
         img/portfolio/large/project-1/6.png"
-          />
+                />
 
-          <!-- view project btn -->
-          <span class="view-project">view project</span>
-        </div>
-        <p class="project-item-title">personal project</p>
-        <!-- project item details start -->
-        <div class="project-item-details">
-          <div class="row">
-            <div class="description">
-              <h3>Project Brief:</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              </p>
-            </div>
-            <div class="info">
-              <h3>Project info</h3>
-              <ul>
-                <li>Date -<span>2020</span></li>
-                <li>Client -<span>xty</span></li>
-                <li>Tools -<span>html,css,js</span></li>
-                <li>
-                  Web -<span><a href="#">www.domain.com</a></span>
-                </li>
-              </ul>
+                <!-- view project btn -->
+                <span class="view-project">view project</span>
+              </div>
+              <p class="project-item-title">personal project</p>
+              <!-- project item details start -->
+              <div class="project-item-details">
+                <div class="row">
+                  <div class="description">
+                    <h3>Project Brief:</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse
+                    </p>
+                  </div>
+                  <div class="info">
+                    <h3>Project info</h3>
+                    <ul>
+                      <li>Date -<span>2020</span></li>
+                      <li>Client -<span>xty</span></li>
+                      <li>Tools -<span>html,css,js</span></li>
+                      <li>
+                        Web -<span><a href="#">www.domain.com</a></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- project item details end -->
             </div>
           </div>
-        </div>
-        <!-- project item details end -->
-      </div>
-    </div>
-    <!-- project item end -->
-  <!-- project item start -->
-  <div class="project-item" data-category="backend">
-    <div class="project-item-inner outer-shadow">
-      <div class="project-item-img">
-        <img
-          src="img/portfolio/thumb/project-5.png"
-          alt="project"
-          data-screenshots="img/portfolio/large/project-1/1.png,
+          <!-- project item end -->
+          <!-- project item start -->
+          <div class="project-item" data-category="backend">
+            <div class="project-item-inner outer-shadow">
+              <div class="project-item-img">
+                <img
+                  src="img/portfolio/thumb/project-5.png"
+                  alt="project"
+                  data-screenshots="img/portfolio/large/project-1/1.png,
       img/portfolio/large/project-1/2.png,
       img/portfolio/large/project-1/3.png,
       img/portfolio/large/project-1/4.png,
       img/portfolio/large/project-1/5.png,
       img/portfolio/large/project-1/6.png"
-        />
+                />
 
-        <!-- view project btn -->
-        <span class="view-project">view project</span>
-      </div>
-      <p class="project-item-title">personal project</p>
-      <!-- project item details start -->
-      <div class="project-item-details">
-        <div class="row">
-          <div class="description">
-            <h3>Project Brief:</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            </p>
+                <!-- view project btn -->
+                <span class="view-project">view project</span>
+              </div>
+              <p class="project-item-title">personal project</p>
+              <!-- project item details start -->
+              <div class="project-item-details">
+                <div class="row">
+                  <div class="description">
+                    <h3>Project Brief:</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse
+                    </p>
+                  </div>
+                  <div class="info">
+                    <h3>Project info</h3>
+                    <ul>
+                      <li>Date -<span>2020</span></li>
+                      <li>Client -<span>xty</span></li>
+                      <li>Tools -<span>html,css,js</span></li>
+                      <li>
+                        Web -<span><a href="#">www.domain.com</a></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- project item details end -->
+            </div>
           </div>
-          <div class="info">
-            <h3>Project info</h3>
-            <ul>
-              <li>Date -<span>2020</span></li>
-              <li>Client -<span>xty</span></li>
-              <li>Tools -<span>html,css,js</span></li>
-              <li>
-                Web -<span><a href="#">www.domain.com</a></span>
-              </li>
-            </ul>
+          <!-- project item end -->
+          <!-- project item start -->
+          <div class="project-item" data-category="fullstack">
+            <div class="project-item-inner outer-shadow">
+              <div class="project-item-img">
+                <img
+                  src="img/portfolio/thumb/project-6.png"
+                  alt="project"
+                  data-screenshots="img/portfolio/large/project-1/1.png,
+    img/portfolio/large/project-1/2.png,
+    img/portfolio/large/project-1/3.png,
+    img/portfolio/large/project-1/4.png,
+    img/portfolio/large/project-1/5.png,
+    img/portfolio/large/project-1/6.png"
+                />
+                <!-- view project btn -->
+                <span class="view-project">view project</span>
+              </div>
+              <p class="project-item-title">personal project</p>
+              <!-- project item details start -->
+              <div class="project-item-details">
+                <div class="row">
+                  <div class="description">
+                    <h3>Project Brief:</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse
+                    </p>
+                  </div>
+                  <div class="info">
+                    <h3>Project info</h3>
+                    <ul>
+                      <li>Date -<span>2020</span></li>
+                      <li>Client -<span>xty</span></li>
+                      <li>Tools -<span>html,css,js</span></li>
+                      <li>
+                        Web -<span><a href="#">www.domain.com</a></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- project item details end -->
+            </div>
           </div>
-        </div>
-      </div>
-      <!-- project item details end -->
-    </div>
-  </div>
-  <!-- project item end -->
-<!-- project item start -->
-<div class="project-item" data-category="fullstack">
-  <div class="project-item-inner outer-shadow">
-    <div class="project-item-img">
-      <img
-        src="img/portfolio/thumb/project-6.png"
-        alt="project"
-        data-screenshots="img/portfolio/large/project-1/1.png,
+          <!-- project item end -->
+          <!-- project item start -->
+          <div class="project-item" data-category="backend">
+            <div class="project-item-inner outer-shadow">
+              <div class="project-item-img">
+                <img
+                  src="img/portfolio/thumb/project-7.png"
+                  alt="project"
+                  data-screenshots="img/portfolio/large/project-1/1.png,
     img/portfolio/large/project-1/2.png,
     img/portfolio/large/project-1/3.png,
     img/portfolio/large/project-1/4.png,
     img/portfolio/large/project-1/5.png,
     img/portfolio/large/project-1/6.png"
-      />
-      <!-- view project btn -->
-      <span class="view-project">view project</span>
-    </div>
-    <p class="project-item-title">personal project</p>
-    <!-- project item details start -->
-    <div class="project-item-details">
-      <div class="row">
-        <div class="description">
-          <h3>Project Brief:</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          </p>
-        </div>
-        <div class="info">
-          <h3>Project info</h3>
-          <ul>
-            <li>Date -<span>2020</span></li>
-            <li>Client -<span>xty</span></li>
-            <li>Tools -<span>html,css,js</span></li>
-            <li>
-              Web -<span><a href="#">www.domain.com</a></span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- project item details end -->
-  </div>
-</div>
-<!-- project item end -->
-<!-- project item start -->
-<div class="project-item" data-category="backend">
-  <div class="project-item-inner outer-shadow">
-    <div class="project-item-img">
-      <img
-        src="img/portfolio/thumb/project-7.png"
-        alt="project"
-        data-screenshots="img/portfolio/large/project-1/1.png,
-    img/portfolio/large/project-1/2.png,
-    img/portfolio/large/project-1/3.png,
-    img/portfolio/large/project-1/4.png,
-    img/portfolio/large/project-1/5.png,
-    img/portfolio/large/project-1/6.png"
-      />
+                />
 
-      <!-- view project btn -->
-      <span class="view-project">view project</span>
-    </div>
-    <p class="project-item-title">personal project</p>
-    <!-- project item details start -->
-    <div class="project-item-details">
-      <div class="row">
-        <div class="description">
-          <h3>Project Brief:</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          </p>
-        </div>
-        <div class="info">
-          <h3>Project info</h3>
-          <ul>
-            <li>Date -<span>2020</span></li>
-            <li>Client -<span>xty</span></li>
-            <li>Tools -<span>html,css,js</span></li>
-            <li>
-              Web -<span><a href="#">www.domain.com</a></span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- project item details end -->
-  </div>
-</div>
-<!-- project item end -->
-<!-- project item start -->
-<div class="project-item" data-category="frontend">
-  <div class="project-item-inner outer-shadow">
-    <div class="project-item-img">
-      <img
-        src="img/portfolio/thumb/project-8.png"
-        alt="project"
-        data-screenshots="img/portfolio/large/project-1/1.png,
+                <!-- view project btn -->
+                <span class="view-project">view project</span>
+              </div>
+              <p class="project-item-title">personal project</p>
+              <!-- project item details start -->
+              <div class="project-item-details">
+                <div class="row">
+                  <div class="description">
+                    <h3>Project Brief:</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse
+                    </p>
+                  </div>
+                  <div class="info">
+                    <h3>Project info</h3>
+                    <ul>
+                      <li>Date -<span>2020</span></li>
+                      <li>Client -<span>xty</span></li>
+                      <li>Tools -<span>html,css,js</span></li>
+                      <li>
+                        Web -<span><a href="#">www.domain.com</a></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- project item details end -->
+            </div>
+          </div>
+          <!-- project item end -->
+          <!-- project item start -->
+          <div class="project-item" data-category="frontend">
+            <div class="project-item-inner outer-shadow">
+              <div class="project-item-img">
+                <img
+                  src="img/portfolio/thumb/project-8.png"
+                  alt="project"
+                  data-screenshots="img/portfolio/large/project-1/1.png,
     img/portfolio/large/project-1/2.png,
     img/portfolio/large/project-1/3.png,
     img/portfolio/large/project-1/4.png,
     img/portfolio/large/project-1/5.png,
     img/portfolio/large/project-1/6.png"
-      />
+                />
 
-      <!-- view project btn -->
-      <span class="view-project">view project</span>
-    </div>
-    <p class="project-item-title">personal project</p>
-    <!-- project item details start -->
-    <div class="project-item-details">
-      <div class="row">
-        <div class="description">
-          <h3>Project Brief:</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          </p>
+                <!-- view project btn -->
+                <span class="view-project">view project</span>
+              </div>
+              <p class="project-item-title">personal project</p>
+              <!-- project item details start -->
+              <div class="project-item-details">
+                <div class="row">
+                  <div class="description">
+                    <h3>Project Brief:</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse
+                    </p>
+                  </div>
+                  <div class="info">
+                    <h3>Project info</h3>
+                    <ul>
+                      <li>Date -<span>2020</span></li>
+                      <li>Client -<span>xty</span></li>
+                      <li>Tools -<span>html,css,js</span></li>
+                      <li>
+                        Web -<span><a href="#">www.domain.com</a></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- project item details end -->
+            </div>
+          </div>
+          <!-- project item end -->
         </div>
-        <div class="info">
-          <h3>Project info</h3>
-          <ul>
-            <li>Date -<span>2020</span></li>
-            <li>Client -<span>xty</span></li>
-            <li>Tools -<span>html,css,js</span></li>
-            <li>
-              Web -<span><a href="#">www.domain.com</a></span>
-            </li>
-          </ul>
-        </div>
+        <!-- project items end -->
       </div>
-    </div>
-    <!-- project item details end -->
-  </div>
-  </div>
-  <!-- project item end -->
-  </div>
-  <!-- project items end -->
-    </div>
     </section>
     <!-- project section end -->
+
+    <!-- contact section start -->
+    <section class="contact-section section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="contact">Get In Touch</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- contact item start -->
+          <div class="contact-item">
+            <div class="contact-item-inner outer-shadow">
+              <i class="fas fa-phone"></i>
+              <span>Phone</span>
+              <p>+91 8306923774</p>
+            </div>
+          </div>
+          <!-- contact item end -->
+          <!-- contact item start -->
+          <div class="contact-item">
+            <div class="contact-item-inner outer-shadow">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+              <p>karunasinghal6@gmail.com</p>
+            </div>
+          </div>
+          <!-- contact item end -->
+          <!-- contact item start -->
+          <div class="contact-item">
+            <div class="contact-item-inner outer-shadow">
+              <i class="fas fa-map-marker"></i>
+              <span>Address</span>
+              <p>Dholpur-328001,Rajasthan India</p>
+            </div>
+          </div>
+          <!-- contact item end -->
+        </div>
+        <div class="row">
+          <div class="contact-form">
+            <form>
+              <div class="row">
+                <div class="w-50">
+                  <div class="input-group outer-shadow hover-in-shadow">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="input-control"
+                    />
+                  </div>
+                  <div class="input-group outer-shadow hover-in-shadow">
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      class="input-control"
+                    />
+                  </div>
+                  <div class="input-group outer-shadow hover-in-shadow">
+                    <input
+                      type="text"
+                      placeholder="Subject"
+                      class="input-control"
+                    />
+                  </div>
+                </div>
+                <div class="w-50">
+                  <div class="input-group outer-shadow hover-in-shadow">
+                    <textarea
+                      class="input-control"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="submit-btn">
+                  <button
+                    type="submit"
+                    class="btn-1 outer-shadow hover-in-shadow"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section end -->
 
     <!-- project popup start -->
     <div class="pp project-popup">
@@ -777,14 +976,21 @@
         <div class="pp-details-inner">
           <div class="pp-title">
             <h2>personal project</h2>
-            <p>Category - <span class="pp-project-category">Web application</span></p>
+            <p>
+              Category -
+              <span class="pp-project-category">Web application</span>
+            </p>
           </div>
           <div class="pp-project-details">
             <div class="row">
               <div class="description">
                 <h3>Project Brief:</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse
                 </p>
               </div>
               <div class="info">
@@ -803,31 +1009,56 @@
         </div>
       </div>
 
-<div class="separator"></div>
-
-
-
+      <div class="separator"></div>
 
       <div class="pp-main">
         <div class="pp-main-inner">
-          <div class="pp-project-details-btn outer-shadow hover-in-shadow">Project details <i class="fas fa-plus"></i></div>
+          <div class="pp-project-details-btn outer-shadow hover-in-shadow">
+            Project details <i class="fas fa-plus"></i>
+          </div>
           <div class="pp-close outer-shadow hover-in-shadow">&times;</div>
-          <img src="img/portfolio/large/project-1/1.png" alt="img" class="pp-img outer-shadow"/>
+          <img
+            src="img/portfolio/large/project-1/1.png"
+            alt="img"
+            class="pp-img outer-shadow"
+          />
           <div class="pp-counter">1 of 6</div>
         </div>
         <div class="pp-loader">
-          <div ></div>
+          <div></div>
         </div>
         <!-- pp navigation -->
-        <div class="pp-prev"><i class="fas fa-play"></i>
-        </div>
-        <div class="pp-next"><i class="fas fa-play"></i>
-        </div>
+        <div class="pp-prev"><i class="fas fa-play"></i></div>
+        <div class="pp-next"><i class="fas fa-play"></i></div>
       </div>
     </div>
     <!-- project popup end -->
 
+    <!-- style switcher start - for demo purposes only-->
+    <div class="style-switcher outer-shadow">
+      <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+        <i class="fas fa-cog fa-spin"></i>
+      </div>
+      <div class="day-night s-icon outer-shadow hover-in-shadow">
+        <i class="fas fa-moon"></i>
+      </div>
+
+      <h4>Theme Colors</h4>
+      <div class="colors">
+        <span class="color1" onclick="setActiveStyle('color1')"></span>
+        <span class="color2" onclick="setActiveStyle('color2')"></span>
+        <span class="color3" onclick="setActiveStyle('color3')"></span>
+        <span class="color4" onclick="setActiveStyle('color4')"></span>
+        <span class="color5" onclick="setActiveStyle('color5')"></span>
+      </div>
+    </div>
+
+    <!-- style switcher end-->
+
     <!-- main js -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- style switcher js -->
+    <script src="js/script-switcher.js"></script>
   </body>
 </html>
