@@ -89,4 +89,11 @@
   .home-section .home-text h2 {
     font-size: 40px;
   }
+
+  .project-popup .pp-prev {
+    left: 1px;
+  }
+  .project-popup .pp-next {
+    right: 1px;
+  }
 }
